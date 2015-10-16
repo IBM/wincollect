@@ -12,8 +12,8 @@ REQUIREMENTS
  - PowerShell v3.0 or v4.0 is required. For more information on PowerShell or downloads, see the following website: <https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx>
  - PowerShell must be run as local admin & users must run **Set-ExecutionPolicy RemoteSigned** to use this script. 
  - To use option 3 for domain scans, Powershell domain cmdlets must be installed.
-  - This script can be run on any Windows host at Windows 2003 or above. 
-  - Remote EPS data collection use WMI to remotely read the Windows Event Log. If there are network firewalls between Windows hosts, then standard WMI ports might need to be opened to prevent connection error messages. 
+  - This script can be run on any Windows host at Windows XP or above. 
+  - For Windows 2003 Server and Windows XP, remote EPS data collection uses WMI to remotely read the Windows Event Log. If there are network firewalls between Windows hosts, then standard WMI ports might need to be opened to prevent connection error messages. 
 
 
 DETAILED DESCRIPTION
