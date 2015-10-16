@@ -1,5 +1,6 @@
 
 ![Example EPS rate report for several Windows hosts](reportsample.png?raw=true "Screenshot")
+Example Report
 
 ABOUT
 =====
@@ -47,10 +48,9 @@ Instructions
 
 
 
-Version information
+Author information
 ===========
- - Version: 1.0
- - Authors: Jamie Wheaton & William Delong
+Authors: Jamie Wheaton & William Delong
 
 
 LICENSE
