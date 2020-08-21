@@ -47,7 +47,7 @@ For more information on Set-ExecutionPolicy, see [https:/go.microsoft.com/fwlink
 7. Wait for the upgrade to complete.
 
 **Results**  
-The WinCollect agent is updated to V7.3.0. Administrators can verify their version by reviewing the logs in C:\IBM\WinCollect\logs\wincollect.log. 
+The WinCollect agent is updated to V7.3.0. Administrators can verify their version by reviewing the logs in C:\Program Files\IBM\WinCollect\logs\wincollect.log. 
 
 ## Author
 Jamie Wheaton
