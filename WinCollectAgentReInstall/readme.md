@@ -8,6 +8,9 @@ The ReInstallWinCollect.ps1 PowerShell utility is intended to assist administrat
 
 ## Before you begin
 
+* * Administrators with QRadar Managed WinCollect agents must install the WinCollect 7.3.0 SFS file on their QRadar Console before they run ReinstallWinCollect.ps1.
+ For QRadar 7.4.x: [Download the WinCollect SFS](http://www.ibm.com/support/fixcentral/swg/quickorder?parent=IBM%20Security&product=ibm/Other+software/IBM+Security+QRadar+SIEM&release=7.4.0&platform=All&function=fixId&fixids=7.4.0-QRADAR-740_QRadar_wincollectupdate-7.3.0-24.sfs&includeSupersedes=0&source=fc)
+ For QRadar 7.3.x: [Download the WinCollect SFS](http://www.ibm.com/support/fixcentral/swg/quickorder?parent=IBM%2520Security&product=ibm/Other+software/IBM+Security+QRadar+SIEM&release=7.3.0&platform=All&function=fixId&fixids=7.3.0-QRADAR-730_QRadar_wincollectupdate-7.3.0-24.sfs&includeSupersedes=0&source=fc)
 * PowerShell must be run as local admin with **Set-ExecutionPolicy RemoteSigned**.
 * This script can be run on any Windows host installed with Windows Vista or later.
 * The utility is intended to run from a system drive, such as C:\, D:\, or E:\. The utility locates WinCollect installations and updates all required files.
