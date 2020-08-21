@@ -34,16 +34,16 @@ The output of the file integrity check must match the values below. If a differe
 
 ```
 Algorithm: SHA256
-Hash     : 0CA34A825FBCC08E7A91FAE2E4B359A993F76FE4362CBBF2BAE6D1D4747458F1
+Hash     : 2F62B901E297A91A86DAE470256685840ED7B1F0A689372CAF77FCF01CA9AB7C
 Path     : C:\ReInstallWinCollect.ps1
 ```
 4. Type **Set-ExecutionPolicy RemoteSigned**.  
 5. If prompted to update the policy, press **Y** to continue.  
-![Options displayed when setting the execution policy in PowerShell](https://github.com/ibm-security-intelligence/wincollect/blob/master/ReinstallWinCollect/setpolicy.png)
+![Options displayed when setting the execution policy in PowerShell](https://github.com/ibm-security-intelligence/wincollect/blob/master/WinCollectReInstall/setpolicy.png)
 For more information on Set-ExecutionPolicy, see [https:/go.microsoft.com/fwlink/?LinkID=135170](https:/go.microsoft.com/fwlink/?LinkID=135170).  
 6. Run the **ReinstallWinCollect.ps1** utility.  
 **Note**: If you experience errors running the ReInstallWinCollect.ps1 file, you might need to review the Security field properties. Right-click on the file and select Properties. In the Security field check **Unblock** and click **Apply**, then run the ReInstallWinCollect file.
-![Administrators might be required to unblock a downloaded file](https://github.com/ibm-security-intelligence/wincollect/blob/master/ReinstallWinCollect/unblockfile.png)
+![Administrators might be required to unblock a downloaded file](https://github.com/ibm-security-intelligence/wincollect/blob/master/WinCollectReInstall/unblockfile.png)
 7. Wait for the upgrade to complete.
 
 **Results**  
