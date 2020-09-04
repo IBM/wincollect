@@ -32,22 +32,14 @@ The ReInstallWinCollect.ps1 PowerShell utility is intended to assist administrat
 1. Copy the utility and the WinCollect agent installer to the system drive of your Windows host, such as C:\.
 2. Launch Microsoft Powershell as an administrator.  
 **Note**: If you are logged in as a local admin, type the following command to open PowerShell as an administrator: **start-process PowerShell -verb runas**
-3. To confirm the SHA sum for the utility, type: **Get-FileHash C:\ReInstallWinCollect.ps1 | Format-list**  
-The output of the file integrity check must match the values below. If a different SHA256 sum is displayed, download the file again and repeat this step.
-
-```
-Algorithm: SHA256
-Hash     : 2F62B901E297A91A86DAE470256685840ED7B1F0A689372CAF77FCF01CA9AB7C
-Path     : C:\ReInstallWinCollect.ps1
-```
-4. Type **Set-ExecutionPolicy RemoteSigned**.  
-5. If prompted to update the policy, press **Y** to continue.  
+3. Type **Set-ExecutionPolicy RemoteSigned**.  
+4. If prompted to update the policy, press **Y** to continue.  
 ![Options displayed when setting the execution policy in PowerShell](https://github.com/ibm-security-intelligence/wincollect/blob/master/WinCollectAgentReInstall/setpolicy.png)
 For more information on Set-ExecutionPolicy, see [https:/go.microsoft.com/fwlink/?LinkID=135170](https:/go.microsoft.com/fwlink/?LinkID=135170).  
-6. Run the **ReinstallWinCollect.ps1** utility.  
+5. Run the **ReinstallWinCollect.ps1** utility.  
 **Note**: If you experience errors running the ReInstallWinCollect.ps1 file, you might need to review the Security field properties. Right-click on the file and select Properties. In the Security field check **Unblock** and click **Apply**, then run the ReInstallWinCollect file.
 ![Administrators might be required to unblock a downloaded file](https://github.com/ibm-security-intelligence/wincollect/blob/master/WinCollectAgentReInstall/unblockfile.png)
-7. Wait for the upgrade to complete.
+6. Wait for the upgrade to complete.
 
 **Results**  
 The WinCollect agent is updated to V7.3.0. Administrators can verify their version by reviewing the logs in C:\Program Files\IBM\WinCollect\logs\wincollect.log. 
