@@ -11,8 +11,8 @@ The ReInstallWinCollect.ps1 PowerShell utility is intended to assist administrat
   * Administrators must copy the existing WinCollect authorized service token from Admin > Authorized Services before you use the ReinstallWinCollect.ps1 utility.
     **Note:** The authorized service token cannot be expired and is assigned the User Role 'WinCollect' in the user interface.
   * Administrators with QRadar Managed WinCollect agents must install the WinCollect 7.3.0 SFS file on their QRadar Console before you run ReinstallWinCollect.ps1.
-   * For QRadar 7.4.x: [Download the WinCollect SFS](http://www.ibm.com/support/fixcentral/swg/quickorder?parent=IBM%20Security&product=ibm/Other+software/IBM+Security+QRadar+SIEM&release=7.4.0&platform=All&function=fixId&fixids=7.4.0-QRADAR-740_QRadar_wincollectupdate-7.3.0-24.sfs&includeSupersedes=0&source=fc)
-   * For QRadar 7.3.x: [Download the WinCollect SFS](http://www.ibm.com/support/fixcentral/swg/quickorder?parent=IBM%2520Security&product=ibm/Other+software/IBM+Security+QRadar+SIEM&release=7.3.0&platform=All&function=fixId&fixids=7.3.0-QRADAR-730_QRadar_wincollectupdate-7.3.0-24.sfs&includeSupersedes=0&source=fc)
+   **For QRadar 7.4.x: [Download the WinCollect SFS](http://www.ibm.com/support/fixcentral/swg/quickorder?parent=IBM%20Security&product=ibm/Other+software/IBM+Security+QRadar+SIEM&release=7.4.0&platform=All&function=fixId&fixids=7.4.0-QRADAR-740_QRadar_wincollectupdate-7.3.0-24.sfs&includeSupersedes=0&source=fc)**
+   **For QRadar 7.3.x: [Download the WinCollect SFS](http://www.ibm.com/support/fixcentral/swg/quickorder?parent=IBM%2520Security&product=ibm/Other+software/IBM+Security+QRadar+SIEM&release=7.3.0&platform=All&function=fixId&fixids=7.3.0-QRADAR-730_QRadar_wincollectupdate-7.3.0-24.sfs&includeSupersedes=0&source=fc)**
 * PowerShell must be run as local admin with **Set-ExecutionPolicy RemoteSigned**.
 * This script can be run on any Windows host installed with Windows Vista or later.
 * The utility is intended to run from a system drive, such as C:\, D:\, or E:\. The utility locates WinCollect installations and updates all required files.
@@ -37,8 +37,8 @@ The ReInstallWinCollect.ps1 PowerShell utility is intended to assist administrat
 ![Options displayed when setting the execution policy in PowerShell](https://github.com/ibm-security-intelligence/wincollect/blob/master/WinCollectAgentReInstall/setpolicy.png)
 For more information on Set-ExecutionPolicy, see [https:/go.microsoft.com/fwlink/?LinkID=135170](https:/go.microsoft.com/fwlink/?LinkID=135170).  
 5. Run the **ReinstallWinCollect.ps1** utility.
- 1. Managed:  .\ReInstallWinCollect.ps1 -Authtoken 0e32xxx-xxxx-xxx-xxxx-xxxxxxxx814b
- 2. Stand Alone:  .\ReInstallWinCollect.ps1
+ * Managed:  .\ReInstallWinCollect.ps1 -Authtoken 0e32xxx-xxxx-xxx-xxxx-xxxxxxxx814b
+ * Stand Alone:  .\ReInstallWinCollect.ps1
 **Note**: If you experience errors running the ReInstallWinCollect.ps1 file, you might need to review the Security field properties. Right-click on the file and select Properties. In the Security field check **Unblock** and click **Apply**, then run the ReInstallWinCollect file.
 ![Administrators might be required to unblock a downloaded file](https://github.com/ibm-security-intelligence/wincollect/blob/master/WinCollectAgentReInstall/unblockfile.png)
 6. Wait for the upgrade to complete.
