@@ -27,11 +27,11 @@ function Stop-WinCollect{
 
     $SERVICESTATE = (Get-Service -Name WinCollect).Status
     
-        if( $SERVICESTATE -eq “Stopping” -or $SERVICESTATE -eq “StopPending”)
+        if( $SERVICESTATE -eq "Stopping" -or $SERVICESTATE -eq "StopPending")
             {
             # still stopping so force process stop
-            Stop-Process -Name “WinCollectSvc” -Force -ErrorAction SilentlyContinue
-            Stop-Process -Name “WinCollect” -Force -ErrorAction SilentlyContinue
+            Stop-Process -Name "WinCollectSvc" -Force -ErrorAction SilentlyContinue
+            Stop-Process -Name "WinCollect" -Force -ErrorAction SilentlyContinue
             write-host "Stopped WinCollect processes"
         
              }
@@ -40,7 +40,7 @@ function Stop-WinCollect{
 
     $SERVICESTATE = (Get-Service -Name WinCollect).Status
     
-        if( $SERVICESTATE -eq “Stopped” )
+        if( $SERVICESTATE -eq "Stopped" )
             {
             Write-Host "Service Stopped `n"
             }
