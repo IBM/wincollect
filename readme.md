@@ -1,8 +1,12 @@
-This repository contains samples of tools that administrators can use to assist with Windows event collection. All Powershell samples and scripts are for reference or educational use. These samples are provided on an "as is" basis and are without warranties of any kind.  
+This repository contains samples of scripts and tools that administrators can use to assist with Windows event collection. All Powershell samples and scripts are for reference or educational use. These samples are provided on an "as is" basis and are without warranties of any kind.  
 
 We encourage administrators to examine these scripts before running them or test these tools in a lab environment before making use of them in the production network.
 
 Any issues discovered using the samples should not be directed to QRadar support, but be reported on the Github issue tracker.
+
+WinCollect 10 Installation Scripts
+=====================
+These installation scripts can be used as part of the WinCollect 10 command line install to configure any of the sources during installation.  This will allow you to configure say Windows Event logs as well as IIS as part of the installation script.
 
 
 Get Event Log Reports
