@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WinCollectScript version="10.0">
+    <Update objPath="AgentCore" >
+        <Parameter name="Name" value="%COMPUTERNAME%" />
+        <StatusServer Enabled="true">
+            <Parameter name="Address" value="{WC_DEST}" />
+        </StatusServer>
+    </Update>
+    <Update objPath="Destinations" >
+        <Parameter name="Description" value="" />
+        <Destination Name="QRadar" >
+            <Parameter name="Enabled" value="true" />
+            <Parameter name="Address" value="{WC_DEST}" />
+        </Destination>
+    </Update>
+    <Update objPath="LocalSources(Name=Local)" >
+        <Parameter name="Enabled" value="true" />
+        <Source Channel="Application" Enabled="true" />
+        <Source Channel="System" Enabled="true" />
+        <Source Channel="Security" Filter="EventIDCode != 5156 OR Message !~ wincollect.exe" FilterEnabled="true" />
+    </Update>
+</WinCollectScript>
