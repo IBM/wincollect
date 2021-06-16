@@ -69,5 +69,5 @@ This is a good way to represent text that might be quite large or odd formatting
 
 ## Author  Team WinCollect
 
-## Copyright (c) 2020 IBM  
+## Copyright (c) 2021 IBM  
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
