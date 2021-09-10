@@ -9,7 +9,7 @@ Any issues discovered using the samples should not be directed to QRadar support
 These installation templates can be used as part of the WinCollect 10 command line install to configure any of the sources during installation.  This will allow you to configure say Windows Event logs as well as IIS as part of the Agent installation.
 
 ### Install Powershell Scripts
-Description TBD
+Agent Installation and Update Powershell scripts
 
 # WinCollect 7 
 ### WinCollect Agent Reinstall
