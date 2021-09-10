@@ -2,11 +2,11 @@
 
 The installation scripts are intended for WinCollect 10 only.
 
-# Purpose of MassAgentUpdate.ps1
+## Purpose of MassAgentUpdate.ps1
 
 This powershell script can be used to change the agent configuration on multiple agents at a time.
 
-# Parameters
+## Parameters
 
 The $computers parameter is used to specify a file that has a list of machines in a .txt file.
 
