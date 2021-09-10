@@ -1,4 +1,3 @@
-SyntaxEditor Code Snippet
 # Installation Scripts
 
 The installation scripts are intended for WinCollect 10 only.
