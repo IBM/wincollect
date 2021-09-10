@@ -1,19 +1,18 @@
-SyntaxEditor Code Snippet
-# Installation Scripts
+# Installation Templates
 
-The installation scripts are intended for WinCollect 10 only.
+The installation templates are intended for WinCollect 10 only.
 
-We have included serveral script examples to show how to use an XML formatted document (script) as part of a command-line install. The scripts cover all the different "sources" supported by WinCollect.  This replaces the paragraph install command of WinCollect 7 which only supported Windows Events.
+We have included serveral template examples to show how to use an XML formatted document (template) as part of a command-line install. The templates cover all the different "sources" supported by WinCollect.  This replaces the paragraph install command of WinCollect 7 which only supported Windows Events.
 
 ## Installation cmd
 
-The installation command will need the WC_SCRIPT parameter which includes the path to the installation script.
+The installation command will need the WC_SCRIPT parameter which includes the path to the installation template.
 
  
 
     msiexec.exe /q /i wincollect-10.x.x-xxx.x64.msi WC_SCRIPT="c:\wincollectinstall\update_<InstallScriptName>.xml"
 
-> All scripts used as part of the WinCollect install must start with
+> All templates used as part of the WinCollect install must start with
 > "update_" and be in XML format. Examples to follow.
 
   
@@ -28,7 +27,7 @@ Example
 
     msiexec.exe /q /i wincollect-10.x.x-xxx.x64.msi WC_DEST="<QRadar Hostname/IP>"  WC_SCRIPT="c:\wincollectinstall\update_<InstallScriptName>.xml"
 
-# Setting Parameters in Scripts
+# Setting Parameters in Templates
 
 You will see the following three different formats for setting parameters in the update XML.
 
