@@ -11,18 +11,9 @@ These installation templates can be used as part of the WinCollect 10 command li
 ### Install Powershell Scripts
 Description TBD
 
-# Get Event Log Reports
-This Powershell script allows administrators to create EPS reports for local or remote Windows systems by polling the data from the Windows Event Viewer. The script advises the administrator on the best method of event collection, based on the returned EPS rate. 
-
-# WinCollect Agent Reinstall
+# WinCollect 7 
+### WinCollect Agent Reinstall
 The ReInstallWinCollect.ps1 PowerShell utility is intended to assist administrators with upgrades to Wincollect V7.3.0 on Windows hosts. The attached utility automates the install process to copy existing installation values and reinstall agents using the WinCollect V7.3.0 EXE for administrators who have large deployments of WinCollect agents.
-
-These installation scripts can be used as part of the WinCollect 10 command line install to configure any of the sources during installation.  This will allow you to configure say Windows Event logs as well as IIS as part of the installation script.
-
 
 # Get Event Log Reports
 This Powershell script allows administrators to create EPS reports for local or remote Windows systems by polling the data from the Windows Event Viewer. The script advises the administrator on the best method of event collection, based on the returned EPS rate. 
-
-# WinCollect Agent Reinstall
-The ReInstallWinCollect.ps1 PowerShell utility is intended to assist administrators with upgrades to Wincollect V7.3.0 on Windows hosts. The attached utility automates the install process to copy existing installation values and reinstall agents using the WinCollect V7.3.0 EXE for administrators who have large deployments of WinCollect agents.
-
