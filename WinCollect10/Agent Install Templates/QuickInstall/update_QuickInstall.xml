@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WinCollectScript version="10.0">
     <Update objPath="AgentCore" >
-        <Parameter name="Name" value="Jamie-Agent-Name"/>
-		<Parameter name="Identifier" value="Jamie-Agent-Identifier"/>
-        <StatusServer Enabled="true">
+    <StatusServer Enabled="true">
             <Parameter name="Address" value="{WC_DEST}" />
         </StatusServer>
     </Update>
@@ -19,7 +17,5 @@
         <Source Channel="Application" Enabled="true" />
         <Source Channel="System" Enabled="true" />
         <Source Channel="Security" Enabled="true" />
-		<Source Channel="Directory Service" Enabled="true" />
-		<Source Channel="DNS Server" Enabled="true" />
     </Update>
 </WinCollectScript>
