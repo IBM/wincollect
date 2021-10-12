@@ -12,8 +12,8 @@ The installation command will need the WC_SCRIPT parameter which includes the pa
 
     msiexec.exe /q /i wincollect-10.x.x-xxx.x64.msi WC_SCRIPT="c:\wincollectinstall\update_<InstallScriptName>.xml"
 
- **All templates used as part of the WinCollect install must start with "update_" and be in XML format. Examples to follow.**
- **Replace <QRadar_Host_IP> in your scripts with the actual Hostname or IP of your QRadar server**
+ - All templates used as part of the WinCollect install must start with "update_" and be in XML format. Examples to follow.
+ - Replace <QRadar_Host_IP> in your scripts with the actual Hostname or IP of your QRadar server
 
 # Setting Parameters in Templates
 
