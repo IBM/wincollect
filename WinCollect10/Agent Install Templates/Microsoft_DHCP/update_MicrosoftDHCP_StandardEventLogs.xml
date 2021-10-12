@@ -3,14 +3,14 @@
     <Update objPath="AgentCore" >
         <Parameter name="Name" value="%COMPUTERNAME%" />
         <StatusServer Enabled="true">
-            <Parameter name="Address" value="{WC_DEST}" />
+            <Parameter name="Address" value="<QRadar_Host_IP>" />
         </StatusServer>
     </Update>
     <Update objPath="Destinations" >
         <Parameter name="Description" value="" />
         <Destination Name="QRadar" >
             <Parameter name="Enabled" value="true" />
-            <Parameter name="Address" value="{WC_DEST}" />
+            <Parameter name="Address" value="<QRadar_Host_IP>" />
         </Destination>
     </Update>
     <Update objPath="LocalSources(Name=Local)" >
