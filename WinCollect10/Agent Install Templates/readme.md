@@ -15,18 +15,6 @@ The installation command will need the WC_SCRIPT parameter which includes the pa
 > All templates used as part of the WinCollect install must start with
 > "update_" and be in XML format. Examples to follow.
 
-  
-
-## Installation Cmd Parameters
-
-
-The WC_DEST parameter can be used with the install scripts to pass a QRadar hostname/IP into the install script. You can either use the WC_DEST parameter or you set the hostname/IP directly in the updated script
-
-Example  
-  
-
-    msiexec.exe /q /i wincollect-10.x.x-xxx.x64.msi WC_DEST="<QRadar Hostname/IP>"  WC_SCRIPT="c:\wincollectinstall\update_<InstallScriptName>.xml"
-
 # Setting Parameters in Templates
 
 You will see the following three different formats for setting parameters in the update XML.
@@ -43,7 +31,7 @@ The easiest way to see how different settings are used is to make changes in the
 
 ### Child parameter
 
-    <Parameter  name="Address"  value="{WC_DEST}"/>
+   
 
   
 
