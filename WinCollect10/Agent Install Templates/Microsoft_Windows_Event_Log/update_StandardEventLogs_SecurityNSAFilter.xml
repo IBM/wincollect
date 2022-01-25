@@ -17,6 +17,10 @@
         <Parameter name="Enabled" value="true" />
         <Source Channel="Application" Enabled="true" />
         <Source Channel="System" Enabled="true" />
-        <Source Channel="Security" FilterEnabled="true" Filter="4624,4625,4700-4800"/>
+        <Source Channel="Security" FilterEnabled="true" >
+            <Parameter name="Filter">
+                1100,1102,4624,4625,4634,4648,4657,4672,4688,4689,4704,4706,4713,4714,4716,4719,4720,4722,4725,4726,4728,4731,4732,4733,4735,4740,4756,4765,4766,4767,4769,4776,4778,4779,4781,4782,4793,4870,4873,4874,4880,4881,4882,4885,4886,4887,4888,4890,4891,4892,4896,4897,4898,4899,4900,5038,5136,5137,5138,5139,5140,5141,5142,5144,5145,5376,5377,5632,6272,6273,6274,6275,6276,6277,6278,6279,6280,6281
+            </Parameter>
+        </Source>
     </Update>
 </WinCollectScript>
