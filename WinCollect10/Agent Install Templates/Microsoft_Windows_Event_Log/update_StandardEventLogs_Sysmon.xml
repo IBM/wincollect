@@ -17,7 +17,7 @@
         <Parameter name="Enabled" value="true" />
         <Source Channel="Application" Enabled="true" />
         <Source Channel="System" Enabled="true" />
-		<Source Channel="Security" FilterEnabled="true" >
+		<Source Channel="Security" Enabled="true" />
         <Source Channel="XPath" >
             <Parameter name="Query">
                 <QueryList>
