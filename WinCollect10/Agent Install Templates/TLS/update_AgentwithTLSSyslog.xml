@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WinCollectScript version="10.0">
     <Update objPath="AgentCore" >
-    <StatusServer Enabled="true">
+        <Parameter name="Identifier" value="{COMPUTERNAME}" />
+        <Parameter name="Name" value="{COMPUTERNAME}" />
+        <StatusServer Enabled="true">
             <Parameter name="Address" value="<QRadar_Hostname>" />
         </StatusServer>
     </Update>
@@ -10,9 +12,17 @@
         <Destination Name="QRadar" >
             <Parameter name="Enabled" value="true" />
             <Parameter name="Address" value="<QRadar_Hostname>" />
+            <Parameter name="Port" value="6514" />
+			<Parameter name="Protocol" value="TLS" />
             <Parameter name="Certificate">
-                <"SAMPLE VALUE">
+                "<SAMPLE VALUE>"
             </Parameter>
         </Destination>
+    </Update>
+    <Update objPath="LocalSources(Name=Local)" >
+        <Parameter name="Enabled" value="true" />
+        <Source Channel="Application" Enabled="true" />
+        <Source Channel="System" Enabled="true" />
+        <Source Channel="Security" Enabled="true" />
     </Update>
 </WinCollectScript>
