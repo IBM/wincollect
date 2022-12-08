@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WinCollectScript version="10.1.0" >
+    <Update objPath="Destinations/Destination(Name=mTLSQRadarSample)" setParam="Passphrase" value="sampleNewPassphrase" />
+</WinCollectScript>
