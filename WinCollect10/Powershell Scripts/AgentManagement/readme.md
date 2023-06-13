@@ -14,6 +14,14 @@ The $source parameter is used to specify the "update_" script you want to use to
 
 The $destination parameter is used to specify where to drop the "update_" script to change the configuration for your agents.  The default location is used here, but if you installed your agent in a different location make sure this is changed accordingly.
 
+## Purpose of SetClientCertThumbprint.ps1
+
+This powershell script can be used to search the local machine's Windows certificate stores for a client certificate and store that certificate's thumbprint as an environment variable. This environment variable can be used in update scripts to update destinations to use the certificate.
+
+## Parameters
+
+The $hostname parameter is used to specify the hostname that the certificate was issued to. The default value for this is the name of the computer the script is running from.
+
 ## Author  Team WinCollect
 
 ## Copyright (c) 2021 IBM  
