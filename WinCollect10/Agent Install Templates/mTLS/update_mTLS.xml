@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WinCollectScript version="10.1.5" >
+	<Update objPath="Destinations/Destination(Name=QRadar)" >
+		<Parameter name="Address" value="10.0.0.1" />
+		<Parameter name="ClientCertificateHash" value="%WC_CLIENT_CERT_THUMBPRINT%" />
+		<Parameter name="ClientCertificateSource" value="Windows certificate store" />
+		<Parameter name="ClientCertificateStore" value="My" />
+		<Parameter name="Port" value="6514" />
+		<Parameter name="Protocol" value="mTLS" />
+	</Update>
+</WinCollectScript>
