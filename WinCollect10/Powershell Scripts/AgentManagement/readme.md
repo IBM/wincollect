@@ -16,7 +16,7 @@ The $destination parameter is used to specify where to drop the "update_" script
 
 ## Purpose of SetClientCertThumbprint.ps1
 
-This powershell script can be used to search the local machine's Windows certificate stores for a client certificate and store that certificate's thumbprint as an environment variable. This environment variable can be used in update scripts to update destinations to use the certificate.
+This powershell script can be used to search the local machine's Windows certificate stores for a client certificate and store that certificate's thumbprint as an environment variable. This environment variable can be used in update scripts (WinCollect10/Agent Install Templates/mTLS/update_mTLSClientCertificate.xml) to update destinations to use the certificate.
 
 ## Parameters
 
