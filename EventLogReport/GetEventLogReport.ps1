@@ -721,7 +721,7 @@ function Write-Log { param($severity, [string]$logMessage)
 
             $ERROR_LOG {Write-Host $output -Fore Red; break}
 
-            Default {Write-Host "Unable to log based on sererity: $Severity" -Fore Cyan; break}
+            Default {Write-Host "Unable to log based on severity: $Severity" -Fore Cyan; break}
         }
 
     }
