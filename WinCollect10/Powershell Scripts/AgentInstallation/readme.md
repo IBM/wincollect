@@ -10,8 +10,11 @@ This powershell script can be used to install WinCollect 10 on a target endpoint
 
 The $file parameter is used to specify the path to where the WinCollect 10 agent MSI file is located.
 The $computerName parameter is used to specify the target endpoint where you want to install the agent.
+
 The WC_DEST parameter is use to specify the QRadar appliance you want to send the events to.
+
 The ADMIN_GROUP command line parameter is required on systems that are not a domain controller.  This command line parameter must be specified with either a true or false value. A value of true adds the WinCollect virtual account to the Administrators group, whereas a value of false does not. This parameter can be omitted when WinCollect 10 is being installed on a domain controller.
+
 If upgrading to version 10.1.7 or above, instead of using the virual account and ADMIN_GROUP parameter, you can alternatively specify an account for the service to run as using the ACCOUNT_NAME parameter. The value will be the name of the existing account to use.
 
 ## Author  Team WinCollect
